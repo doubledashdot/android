@@ -1131,4 +1131,5 @@
   <include name="snippets/lineage.xml" />
   <include name="snippets/legacy.xml" />
   <include name="snippets/pixel.xml" />
+  <include name="snippets/vanadium.xml" />
 </manifest>

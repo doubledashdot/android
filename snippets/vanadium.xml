@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- GitLab remote -->
+  <remote name="vanadium" fetch="https://gitlab.com/vanadium-oss/" />
+
+  <!-- Replaced by vanadium alternatives -->
+  <remove-project name="platform/hardware/samsung/nfc" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+
+  <!-- Samsung hardware -->
+  <project
+      name="common/hardware/samsung"
+      path="hardware/samsung"
+      remote="vanadium"
+      revision="thirteen" />
+
+  <!-- Samsung NFC -->
+  <project
+      name="common/hardware/nfc"
+      path="hardware/samsung/nfc"
+      remote="vanadium"
+      revision="thirteen" />
+
+  <!-- Qualcomm SM8250 Display -->
+  <project
+      name="sm8250/common/hardware/qcom-caf_display"
+      path="hardware/qcom-caf/sm8250/display"
+      remote="vanadium"
+      revision="thirteen" />
+
+</manifest>
